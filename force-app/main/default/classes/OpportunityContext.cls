@@ -78,16 +78,6 @@ public without sharing class OpportunityContext extends SObjectContext {
     }
 
     /**
-     * @description Returns primary contact provided a given Opportunity
-     * @param opportunity Opportunity to use for retrieval
-     *
-     * @return Contact
-     */
-    public Contact getPrimaryContact(Opportunity opportunity) {
-        return (Contact)getSObject('Contact', opportunity.SalesLoft1__Primary_Contact__c);
-    }
-
-    /**
      * @description Returns all quote lines on the primary quote provided a given Opportunity
      * @param opportunity Opportunity to use for retrieval
      *
