@@ -117,7 +117,7 @@ public without sharing class OpportunityContext extends SObjectContext {
      * @param opportunities Opportunities used for retrieval
      */
     private void queryRelatedAccounts(List<Opportunity> opportunities) {
-        //Helper method not included that gets all cycles through and grabs all Ids in the selected field
+        //Helper method not included that cycles through and grabs all Ids in the selected field
         Set<Id> accountIds = UT_Helpers.getIds(opportunities, Opportunity.AccountId);
 
         List<Account> accounts = [
