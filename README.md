@@ -39,3 +39,4 @@ The trigger calls a context reset on each execution to ensure per-transaction st
 **Notes & Adaptation**
 - The code is intentionally pragmatic: readable, straightforward, and suitable for adaptation. If you prefer a library or framework approach, the same concepts map to other patterns (service layers, domain services, or third-party frameworks).
 - You can remove or stub Nebula-specific utilities and replace them with simple equivalents if you don't want that dependency.
+- Custom metadata needed for nebula framework to function is not included, example is code only.
